@@ -14,3 +14,19 @@
 $app->get('/', function () use ($app) {
     return $app->version();
 });
+
+use Illuminate\Http\Request;
+use Tymon\JWTAuth\JWTAuth;
+
+$app->post('login', function(Request $request, JWTAuth $jwt) {
+    $this->validate($request, [
+        'email' => 'required|email|exists:users',
+        'password' => 'required|string'
+    ]);
+
+    if (! $token = $jwt->attempt($request->only(['email', 'password']))) {
+        return response()->json(['user_not_found'], 404);
+    }
+
+    return response()->json(compact('token'));
+});
