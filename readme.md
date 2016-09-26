@@ -24,6 +24,8 @@ cp .env.example .env
 
 and change the `APP_KEY` in `.env` to a 32 characters long string.
 
+Run `php artisan jwt:secret` to generate a new *JWT Authentication Secret*.
+
 Create empty database file called `database.sqlite` in `database` directory.
 
 Run migrations and seed database with:
