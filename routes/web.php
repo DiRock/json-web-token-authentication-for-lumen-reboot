@@ -30,3 +30,10 @@ $app->post('login', function(Request $request, JWTAuth $jwt) {
 
     return response()->json(compact('token'));
 });
+
+$app->group(['middleware' => 'auth'], function () use ($app) {
+    $app->post('user', function (JWTAuth $jwt) {
+        $user = $jwt->parseToken()->toUser();
+        return $user;
+    });
+});
