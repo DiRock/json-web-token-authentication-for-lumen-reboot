@@ -1,6 +1,6 @@
 # JSON Web Token Authentication for Lumen REBOOT
 
-I see that a lot of you are having problems with my blog post on [JSON Web Token Authentication for Lumen](https://laravelista.com/posts/json-web-token-authentication-for-lumen#comments). I've been reading all comments and emails about it, but because this post was written more than one year ago I decided to reboot the whole post instead of trying to fix issues that have been piling on.
+I see that a lot of you are having problems with my blog post on [JSON Web Token Authentication for Lumen](https://laravelista.com/posts/json-web-token-authentication-for-lumen). I've been reading all comments and emails about it, but because this post was written more than one year ago I decided to reboot the whole post instead of trying to fix issues that have been piling on.
 
 At the time when I wrote that post you could actually follow along and get the wanted result, but packages changed/updated, new versions of Lumen released and things broke.
 
