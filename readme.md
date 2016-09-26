@@ -4,7 +4,7 @@ I see that a lot of you are having problems with my blog post on [JSON Web Token
 
 At the time when I wrote that post you could actually follow along and get the wanted result, but packages changed/updated, new versions of Lumen released and things broke.
 
-So, for this lesson I will be using Lumen 5.3 (which is the latest Lumen version released at the time of this lesson) with [tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth) package version `1.0.0-alpha.3` to implement JWT authentication in Lumen and at the end I will gather a list of all unanswered questions and respond to each the best that I can.
+So, for this lesson I will be using Lumen 5.3 (which is the latest Lumen version released at the time of this lesson) with [tymondesigns/jwt-auth](https://github.com/tymondesigns/jwt-auth) package version `1.0.0-alpha.3` to implement JWT authentication in Lumen.
 
 ## Installation
 
